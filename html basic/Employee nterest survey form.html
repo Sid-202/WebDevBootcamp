@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Interest Survey Form</title>
+</head>
+
+<body>
+    <h1>Employee Interests Survey Form</h1>
+    <form action="/formi">
+        <div>
+            <label for="name">Enter your name</label>
+            <input type="text" name="name" id="name">
+            <label for="dept">Enter your department</label>
+            <input type="text" name="dept" id="dept">
+        </div>
+        <section>
+            <label for="info">Tell us a little about yourself</label>
+            <textarea name="info" id="info" cols="15" rows="5"></textarea>
+        </section>
+        <section>
+            <label>Do you exercise at home?</label>
+            <input type="radio" name="exercise" id="exerciseY">
+            <label for="exerciseY">Yes</label>
+            <input type="radio" name="exercise" id="exerciseN">
+            <label for="exerciseN">No</label>
+        </section>
+        <section>
+            <label>How do you like to read about your favourite topics?</label>
+            <input type="checkbox" name="readBooks" id="readBooks">
+            <label for="readBooks">Books</label>
+            <input type="checkbox" name="readOnline" id="readOnline">
+            <label for="readOnline">Online Resources</label>
+            <input type="checkbox" name="readPhone" id="readPhone">
+            <label for="readPhone">Phone Apps</label>
+            <input type="checkbox" name="readMag" id="readMag">
+            <label for="readMag">Magazines</label>
+        </section>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
