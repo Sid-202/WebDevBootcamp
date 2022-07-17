@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* Main axis direction*/
+    flex-direction: row;
+    /* Main axis space-between*/
+    justify-content: center;
+    /* Cross axis direction*/
+    flex-wrap: wrap;
+    /* Cross axis space-between lines*/
+    /* align-content: space-around; */
+    /* Cross axis alignment of content items, less power than align content
+    works with align-self w/out align content*/
+    align-items: flex-start;
+
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* Basic width of item */
+    /* flex-basis: 200px; */
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#container div:nth-of-type(1) {
+    /* If extra space after basic width, grow speed */
+    flex-grow: 2;
+    /* If extra space after basic width decreasing, decrease speed */
+    flex-shrink: 2;
+}
+
+h2 {
+    text-align: center;
+}
+
+#new-section {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#new-section .sidebar {
+    background-color: #80ffdb;
+    flex: 1 1;
+    border: 2px solid white;
+
+}
+
+#new-section .main-content {
+    background-color: #48bfe3;
+    flex: 3 3 300px;
+    border: 2px solid white;
+}
