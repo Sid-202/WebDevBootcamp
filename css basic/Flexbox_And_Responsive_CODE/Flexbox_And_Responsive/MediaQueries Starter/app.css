@@ -6,15 +6,47 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
 nav {
     font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-ul,li {
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    /* border: 2px solid black; */
+    padding: 0;
+}
+
+li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+@media (max-width:768px) {
+    h1 {
+        font-size: 4em;
+        color: blue;
+    }
 
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media (max-width:576px) {
+    h1 {
+        font-size: 3em;
+        color: red;
+    }
+}
