@@ -115,3 +115,20 @@ body {
         height: 80%;
     }
 }
+
+/* Small size screens - phone */
+@media (max-width:730px) {
+    .panel-pricing-table {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    .pricing-plan {
+        flex-wrap: wrap;
+    }
+
+
+}
