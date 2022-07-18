@@ -27,7 +27,7 @@ body {
 
 .pricing-header {
     color: slategray;
-    padding: 1em 0 2em;
+    padding: 1.5em 0 2em;
     font-size: 0.9rem;
 
 }
@@ -58,6 +58,7 @@ body {
     font-size: 0.8rem;
     margin: 1.5em;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .pricing-button-is-featured {
@@ -70,6 +71,7 @@ body {
     background-color: navy;
     color: white;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .pricing-button:hover,
@@ -103,4 +105,13 @@ body {
     font-size: 1.7rem;
     color: navy;
     padding: 0.5em 0.5em 0;
+}
+
+
+/* Mid-size screens */
+@media (max-width:1007px) {
+    .panel-pricing-table {
+        flex: 0 1 80%;
+        height: 80%;
+    }
 }
