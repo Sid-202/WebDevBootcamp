@@ -127,7 +127,21 @@ body {
     }
 
     .pricing-plan {
+        flex: 0 1;
         flex-wrap: wrap;
+        border-right: none;
+        border-bottom: 2px solid lightgray;
+        padding: 2em 0;
+        align-content: stretch;
+        margin: 2rem 2rem;
+    }
+
+    .pricing-plan:last-child {
+        border-bottom: none;
+    }
+
+    .pricing-features {
+        flex-direction: column;
     }
 
 
